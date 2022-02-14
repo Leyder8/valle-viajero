@@ -1,0 +1,726 @@
+body {
+	font-family: segoe UI;
+	color:var(--fuente);
+}
+:root {
+	--fuente:#707070;
+	--naranja:#ffac27;
+	--violeta:#93278F;
+	--blanco:#fff;
+	--verde:#5EE55E;
+}
+main {
+	display: grid ;
+	width: 100vw;
+	grid-template-areas: 
+		"header header header"
+		"redes redes redes"
+		"main main main"
+		"main main main"
+		"main main main"
+		"footer footer footer";
+	grid-template-rows: repeat(auto-fill, 1fr);
+}
+/*header*/
+.header {
+	display: grid;
+	background-color: var(--naranja);
+	width: 100%;
+	height: 80px;
+	grid-area: header;
+	position: fixed;
+	z-index: 100;
+	box-shadow: 0px -4px 10px 1px var(--violeta);
+	margin-top: -80px;
+}
+.menu {
+	background-color: ;
+	width: 100vw;
+	height: 80px;
+	display: flex;
+	justify-content: ; 
+}
+.logo__logo {
+	position: ;
+	width: 190px;
+	margin-left: 11vw;
+	transition-property: width;
+	transition-duration: .4s;
+	transition-timing-function: ease-in-out;
+}
+.logo__logo:hover {
+	width: 195px;
+}
+.lista {
+	position: relative;
+	margin-left: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.lista__items {
+	display: inline-block;
+}
+.lista__a {
+	text-decoration: none;
+	color:var(--blanco);
+	margin-right: 2vw;
+	border-bottom: 0px solid var(--naranja);
+	transition-duration:.3s;
+	transition-property: border-bottom;
+	transition-timing-function: ease-in-out;
+}
+.lista__a:hover {
+	border-bottom: 1px solid var(--violeta);
+	padding-bottom: 1px;
+}
+.buscar {
+	position: relative;
+	margin-right: 11vw;
+	margin-top: auto;
+	margin-bottom: auto;
+	background-color: ;
+}
+.bucar__input {
+	width: 10vw;
+	height:30px;
+	border-radius: 50px;
+	border-style: none;
+	padding-left: 10px;
+	transition-delay: .2s;
+	transition-duration: .4s;
+	transition-timing-function: ease-out;
+}
+.bucar__input:focus {
+	background-color: var(--violeta);
+	color: var(--blanco);
+	outline-style: none;
+	width: 13vw;
+
+}
+.redes {
+	background-color: var(--violeta);
+	width: 98vw;
+	grid-area: redes;
+	height: 25px;
+	margin: auto;
+	border-radius: 0px 0px 5px 5px;
+	position: relative;
+	margin-top: 80px;
+	box-shadow: 0px -1px 5px 1px var(--fuente);
+	flex-shrink: 2;
+}
+.iconos {
+	height:;
+	width: 200px;
+	position: flex;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: space-between;
+}
+.iconos__redes {
+	width: 38px;
+	padding: 2px;
+	margin-top: -6px;
+	transition-duration: .2s;
+	transition-property: opacity;
+	transition-timing-function: ease-in-out;
+}
+.iconos__redes:hover {
+	opacity: 60%;
+}
+/*main-index*/
+.main {
+	background-color: ;
+	width: 100vw;
+	grid-area: main;
+	justify-items:center;
+}
+.main__baner-img {
+	display: flex;
+	width: 	80vw;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 	90px;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px 1px var(--naranja);
+}
+.main__municipios {
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	justify-items: center; 
+	background-color: ;
+	width: 90%;
+	height: 600px;
+	border-top: 2px solid var(--fuente);
+}
+.main__municipios h1 {
+	font-size: 70px;
+	color:var(--naranja);
+}
+.main__municipios-cumbre {
+	display: grid;
+	width: 80%;
+	height: 80%;
+	grid-template-areas: 
+	"imagen imagen titulo"
+	"imagen imagen texto";
+}
+.main__municipios-cumbre-img {
+	display: grid;
+	grid-area: imagen;
+	align-content: end;
+	background-color: ;
+}
+.main__municipios-cumbre-img-img {
+	width: 450px;
+	border-radius: 28px;
+	transition-duration: .4s;
+	transition-timing-function: ease-in-out;
+	transition-property: box-shadow;
+}
+.main__municipios-cumbre-img-img:hover {
+	box-shadow: 0px 0px 4px 4px var(--violeta);
+}
+.main__municipios-cumbre-titulo {
+	background-color: ;
+	grid-area: titulo;
+}
+.main__municipios-cumbre-titulo h2 {
+	display: inline-block;
+	font-size: 40px;
+	color:var(--violeta);
+	text-decoration: none;
+	margin-left: 50px;
+}
+.municipios__cumbre-info {
+	background-color: ;
+	grid-area: texto;
+}
+.municipios__cumbre-info p {
+	display: inline-block;
+	font-size: 20px;
+	color: var(--violeta);
+	text-decoration:none;
+	margin-left: 50px;
+	border-left:2px solid var(--violeta);
+	padding-left: 30px;
+}
+/*main-cumbre*/
+.areas {
+	display: grid;
+	grid-template-areas: 
+	"header header header"
+	"redes redes redes"
+	"s-uno s-uno s-uno"
+	"s-uno s-uno s-uno"
+	"s-dos s-dos s-dos"
+	"s-dos s-dos s-dos"
+	"s-tres s-tres s-tres"
+	"s-tres s-tres s-tres"
+	"s-cuatro s-cuatro s-cuatro"
+	"s-cuatro s-cuatro s-cuatro"
+	"footer footer footer"
+}
+/*sección 1*/
+.pag_cumbre {
+	display: grid;
+	grid-area: s-uno;
+	grid-template-areas: 
+	"descripcion descripcion imagen imagen"
+	"descripcion descripcion imagen imagen"
+	"ubicacion ubicacion imagen imagen"
+	"ubicacion ubicacion imagen imagen";
+	margin-left: 7vw;
+	margin-right: 7vw;
+}
+.pag_cumbre__descripcion {
+	display: grid;
+	grid-area: descripcion;
+	color:var(--blanco);
+	background-color: var(--violeta);
+	margin-bottom: 0px;
+	margin-top: 120px;
+	padding: 20px 0px 0px 20px;
+	border-radius: 20px 0px 0px 20px;
+	margin-right: 0px;
+	height: 200px;
+}
+.pag_cumbre__descripcion h2 {
+	font-size: 45px;
+	margin-left: 40px;
+	margin-bottom: -20px;
+	background-color: ;
+	height: 4,37rem;
+}
+.pag_cumbre__descripcion p {
+	border-left: 2px solid var(--fuente);
+	margin-left: 90px;
+	margin-right:90px; 
+	height: 0,62rem;
+	border-left: none;
+	background-color:;
+}
+.pag_cumbre__ubicacion {
+	display: grid;
+	grid-area: ubicacion;
+	color:var(--violeta);
+	margin-left:70px;
+	margin-top: 20px;
+	padding-bottom: 15px;
+	background-color: ;
+}
+.pag_cumbre__ubicacion h3 {
+	border-bottom: 2px solid var(--violeta);
+	width: 20vw;
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+}
+.pag_cumbre__ubicacion p {
+	font-size: 15px;
+	margin-left: px;
+	width: 270px;
+}
+.pag_cumbre__imagen {
+	display: grid;
+	grid-area: imagen;
+	background-color:;
+	margin-top: 75px;
+	margin-right: 25px;
+}
+.pag_cumbre__imagen-img {
+	width: 450px;
+	padding: 12px;
+	outline: 4px solid var(--violeta);
+	border-radius: 20px;
+	margin-right: 0px;
+	margin-bottom: -70px;
+}
+.pag_cumbre__imagen cite {
+	margin-left: 40px;
+}
+/*sección 2*/
+.dialecto {
+	grid-area: s-dos;
+	display: grid;
+	grid-template-areas: 
+	"d-descripcion d-descripcion d-descripcion"
+	"grilla grilla grilla"
+	"grilla grilla grilla";
+	margin-top: 100px;
+}
+.dialecto__descripcion {
+	display: grid;
+	grid-area: d-descripcion;
+	justify-items:center;
+}
+.dialecto__descripcion h2 {
+	background-color: var(--naranja);
+	width: 100%;
+	height: 60px;
+	color:var(--blanco);
+	justify-self: center;
+	border-radius: 5px 5px 10px 20px;
+	text-align: center;
+	font-size: 25px;
+}
+.dialecto__descripcion p {
+	width: 90%;
+	text-align: center;
+}
+.dialecto__descripcion p b {
+	color:var(--violeta);
+}
+.grilla {
+	display: grid;
+	margin: 40px 100px 100px 100px;
+	grid-area: grilla;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-template-rows: repeat(2, minmax(250px, 1fr) );
+	grid-gap: 40px;
+}
+.grilla__div {
+	display: grid;
+	border:2px solid var(--violeta);
+	background-color: var(--naranja);
+	border-radius:20px;
+	justify-items: center;
+	align-items: center;
+	text-align: center;
+	color:var(--blanco);
+	box-shadow: 0px 0px 2px 2px var(--violeta);
+}
+.grilla p {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.grilla h3 {
+	margin-bottom: -80px;
+	margin-top: 0px;
+	border-bottom: 2px solid var(--blanco);
+	padding-bottom:10px;
+}
+/*sección 3*/
+.plazas_mercado {
+	grid-area:s-tres; 
+	display: grid;
+	grid-template-areas: 
+	"titulo titulo titulo titulo"
+	"contenido contenido imagen imagen"
+	"contenido contenido imagen imagen"
+	"contenido-d contenido-d imagen-d imagen-d"
+	"contenido-d contenido-d imagen-d imagen-d";
+	margin-top: 40px;
+}
+.plazas_mercado__titulo {
+	display: grid;
+	grid-area: titulo;
+	color:var(--verde);
+	font-size: 25px;
+	margin-bottom: 70px;
+	margin-left: 80px;
+	border-left: 2px solid var(--verde);
+	height: 50px;
+	align-content: center;
+	margin-bottom: 80px;
+	padding-left: 20px;
+}
+.plazas_mercado__contenido {
+	display: grid;
+	grid-area: contenido;
+	width: 1fr;
+	height: 350px;
+	background-color: var(--verde);
+	border-radius: 0px 20px 20px 0px;
+	color: var(--blanco);
+	margin-right: -250px; 
+}
+.plazas_mercado__contenido h3 {
+	font-size: 30px;
+	margin-bottom: -50px;
+	margin-top: 55px;
+	margin-left: 180px;
+}
+.plazas_mercado__contenido p {
+	padding-right: 290px;
+	padding-left: 180px;
+	background-color: ;
+	font-size: 20px;
+}
+.plazas_mercado__img_plaza {
+	display: grid;
+	grid-area: imagen;
+	width: 440px;
+	height: 83%;
+	border: 5px solid var(--verde);
+	padding: 10px;
+	border-radius: 20px;
+	margin-right: 150px;
+	margin-top: 15px;
+	background-color: var(--blanco)
+}
+.plazas_mercado__info_frutas {
+	display: grid;
+	grid-area: contenido-d;
+	margin-left: 100px;
+	padding-right: 70px;
+	width: 400px;
+	background-color: ;
+	margin-top: 50px;
+}
+.plazas_mercado__info_frutas h2 {
+	margin-bottom: -20px;
+	font-size: 50px;
+	color: var(--verde);
+}
+.plazas_mercado__info_frutas p {
+	font-size: 20px;
+	color: var(--violeta);
+}
+.plazas_mercado__img_frutas {
+	display: grid;
+	grid-area: imagen-d;
+	background-color: var(--verde);
+	grid-template-areas: 
+	"manzana banano fresa"
+	"sandia ceresas pera";
+	border-radius: 20px 0px 0px 20px;
+	width: 1fr;
+	height: 300px;
+	margin-left: -70px;
+	margin-top: 50px;
+}
+.plazas_mercado__img_frutas img {
+	
+}
+.plazas_mercado__img_frutas-banano {
+	grid-area: banano;
+	width: 200px;
+	margin-top: -30px;
+	margin-left: auto;
+	margin-right: ;
+}
+.plazas_mercado__img_frutas-manzana {
+	grid-area: manzana;
+	width: 200px;
+	margin-top: -30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.plazas_mercado__img_frutas-pera {
+	grid-area: pera;
+	width: 200px; 
+	margin-top: -100px;
+	margin-left: auto;
+	margin-right: auto;
+	transform: rotate(-10deg);
+}
+.plazas_mercado__img_frutas-fresa {
+	grid-area: fresa;
+	width: 250px;
+	margin-top: -40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.plazas_mercado__img_frutas-sandia {
+	grid-area: sandia;
+	width: 165px;
+	margin-top: -70px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.plazas_mercado__img_frutas-ceresas {
+	grid-area: ceresas;
+	width: 230px;
+	margin-top: -110px;
+	margin-left: auto;
+	margin-right: ;
+}
+/*sección 4*/
+.gastronomia {
+	display: grid;
+	grid-area: s-cuatro;
+	grid-template-areas: 
+	"contenido-g contenido-g contenido-g"
+	"contenido-g contenido-g contenido-g"
+	"img-g img-g img-g"
+	"img-g img-g img-g";
+	margin-bottom: 50px;
+	margin-top: 200px;
+}
+.gastronomia__contenido_g {
+	display: grid;
+	grid-area: contenido-g;
+	grid-template-areas: 
+	"titulo-g cont-g cont-g"
+	"titulo-g cont-g cont-g";
+	background-color: var(--naranja);
+	padding: 0px 90px;
+	height: 200px;
+	align-content: center;
+}
+.gastronomia__contenido_g h2 {
+	grid-area: titulo-g;
+	font-size: 30px;
+	color:var(--blanco);
+	margin-left: 40px;
+	padding-left: 40px;
+	border-left: 2px solid var(--blanco)
+}
+.gastronomia__contenido_g p {
+	grid-area: cont-g;
+	border:;
+	padding-left: 150px;
+	font-size: 20px;
+	color:var(--blanco);
+}
+.gastronomia__imagenes {
+	display: grid;
+	grid-area: img-g;
+	grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+	grid-template-rows: repeat(1, minmax(200px, 1fr));
+	border: ;
+	justify-items: start;
+	grid-gap: 50px;
+	margin:50px;
+}
+.gastronomia__imagenes img {
+	border: 6px solid var(--naranja);
+	border-radius: 0.8vw;
+}
+.gastronomia__imagenes div {
+	border: ;
+	text-align: center;
+}
+.gastronomia__imagenes-sancocho {
+	height: 175px;	
+}
+.gastronomia__imagenes-empanada {
+	height: 175px;
+}
+.gastronomia__imagenes h4 {
+	margin-bottom: 35px;
+}
+.gastronomia__imagenes p {
+	padding: 10px 20px 0px 20px;
+}
+/*footer*/
+.footer {
+	display: grid;
+	background-color: var(--violeta);
+	width: 1fr;
+	height: 320px;
+	grid-area: footer;
+	margin-top: 70px;
+	grid-template-areas:
+	"logo iconos patrocinadores"
+	"logo iconos patrocinadores"
+	"copyrigth iconos entradas";
+}
+.logo_footer {
+	display: flex;
+	margin: auto;
+	background-color: ;
+	grid-area: logo;
+}
+.logo_footer img {
+	position: ;
+	width: 27vw;
+}
+.copyrigth {
+	display: flex;
+	margin: auto;
+	grid-area: copyrigth;
+	background-color: ;
+}
+.copyrigth p {
+	color:var(--blanco);
+}
+.redes_footer {
+	display: flex;
+	margin: auto;
+	grid-area: iconos;
+	background-color: ;
+	width: 11vw; 
+	flex-wrap: wrap-reverse;
+}
+.redes_footer img {
+	width: 4vw;
+	transition-duration: .2s;
+	transition-property: opacity;
+	transition-timing-function: ease-in-out;
+}
+.redes_footer img:hover {
+	opacity: 60%;
+}
+.redes_footer p {
+	color: var(--blanco) 
+}
+.patrocinadores {
+	display: flex;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: 0px;
+	grid-area: patrocinadores;
+	background-color: var(--blanco);
+	padding: 15px 0px 15px 60px;
+	border-radius: 15px 0px 0px 15px;
+}
+.patrocinadores img {
+	width: 20vw;
+}
+.lista_footer {
+	display: flex;
+	margin: auto;
+	grid-area: entradas;
+	background-color: ;
+}
+.lista_footer li {
+	display: inline-block;
+}
+.lista_footer a {
+	text-decoration: none;
+	color:var(--blanco);
+	margin-right: 50px;
+	border-bottom: 1px solid var(--blanco);
+	padding: 2px;
+}
+/*Responsive*/
+/*Responsive-index*/
+@media only screen and  ( max-width: 1060px) {
+.seccion_municipios {
+	margin-top: -165px;
+	border-top: 1px solid var(--fuente);
+	padding-top: 10px;
+	margin-bottom: -100px;
+}
+.la_cumbre {
+	margin-top: -170px;
+}
+.img_cumbre img {
+	width: 260px;
+	margin-bottom: 10px;
+	box-shadow: 0px 0px 4px 1px var(--violeta);
+}
+.info_cumbre p {
+	 font-size: 15px;
+	 padding-left: 25px;
+	 margin-left: 40px;
+}
+.titulo_cumbre h2 {
+	margin-left: 38px;
+}
+.logo_footer {
+	margin-left: 20px;
+}
+.logo_footer img {
+	width: 250px;
+}
+.patrocinadores {
+	padding: 10px 0px 10px 0px;
+	width: 280px;
+	margin-left: auto;
+}
+.patrocinadores img {
+	width: 200px;
+	margin-left: auto;
+	margin-right: 40px;
+}
+.lista_footer {
+	display: grid;
+	height: 75px;
+	width: px;
+	align-content: end;
+}
+.lista_footer li {
+	margin-bottom: 10px;
+	align-self: end;
+	padding-left: 20px;
+}
+.copyrigth {
+	margin-left: 80px;
+	width: 150px;	
+}
+.footer {
+	height: 250px;
+}
+}
+@media screen and (max-width: 428px) {
+.header {
+	width: 100%;
+}
+.logo {
+	width: 100px;
+}
+.buscar {
+
+}
+.buscar input {
+	
+}
+.redes {
+	display: flex;
+	width: 100%;
+	margin-right: auto;
+}
+}
